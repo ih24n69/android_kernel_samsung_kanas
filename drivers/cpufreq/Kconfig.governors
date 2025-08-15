@@ -48,3 +48,4 @@ config CPU_FREQ_GOV_LULZACTIVE2
 	  workload is less than 60%, governor scales down CPU
 	  to next lower step. When screen is off, frequency is
 	  locked to global scaling minimum frequency.
+

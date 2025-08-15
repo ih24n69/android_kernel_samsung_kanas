@@ -90,4 +90,3 @@ SANDROID KERNEL FEATURES :
 		* Add CPU hotplug AutoSMP
 
 
-

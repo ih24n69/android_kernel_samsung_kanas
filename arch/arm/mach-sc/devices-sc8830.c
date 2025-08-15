@@ -1156,7 +1156,7 @@ struct platform_device sprd_ion_dev;
 static struct ion_platform_heap ion_pheaps[] = {
                 {
                         .id     = ION_HEAP_ID_SYSTEM,
-                        .type   = ION_HEAP_TYPE_SYSTEM,
+                        .type   = ION_HEAP_TYPE_CUSTOM,
                         .name   = "ion_heap_system",
                 },
                 {
@@ -2212,6 +2212,7 @@ static int native_wcnmodem_stop(void *arg)
 
 	/* cp2 force shutdown */
 	value = ((__raw_readl((void __iomem *)WCN_REG_CLK_ADDR) | 0x02000000));
+
 	__raw_writel(value, (void __iomem *)WCN_REG_CLK_ADDR);
 	return 0;
 }

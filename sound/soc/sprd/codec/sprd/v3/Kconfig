@@ -6,4 +6,3 @@ config SND_SOC_SPRD_AUDIO_USE_INTER_HP_PA
 	bool "Use spreadtrum internal HeadPhone PA"
 	help
 	  Say Y if you want use sprdtrume internal headphone pa
-

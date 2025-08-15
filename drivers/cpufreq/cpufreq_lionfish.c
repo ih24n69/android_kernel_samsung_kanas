@@ -619,7 +619,7 @@ static inline void __lf_gov_queue_work(int cpu, struct lf_gdbs_data *dbs_data,
 }
 
 static void lf_gov_queue_work(struct lf_gdbs_data *dbs_data,
-		struct cpufreq_policy *policy, unsigned int delay, bool all_cpus)
+		struct cpufreq_policy *policy, unsigned int delay, bool all_cpus, int governor_enabled)
 {
 	int i;
 
@@ -893,4 +893,5 @@ fs_initcall(cpufreq_gov_dbs_init);
 #else
 module_init(cpufreq_gov_dbs_init);
 #endif
-module_exit(cpufreq_gov_dbs_exit); 
+module_exit(cpufreq_gov_dbs_exit);
+

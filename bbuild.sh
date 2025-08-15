@@ -15,7 +15,7 @@ OWNER=MuhammadIhsan-Ih24n
 NOW=`date "+%d%m%Y-%H%M%S"`
 PREFIX=SA
 
-export CROSS_COMPILE=/home/muhammadihsan/LineageOS15.1-O-SandroidTeam-Ih24n/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
+export CROSS_COMPILE=builds/toolchains/bin/arm-eabi-
 export ARCH=arm
 export LOCALVERSION=-`echo SandroidTeam-Ih24n`
 
